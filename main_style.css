@@ -9,7 +9,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("images/copy-bhou bhou--new year 2019.jpg");
+    background-image: url("assets/images/copy-bhou bhou--new year 2019.jpg");
     min-height: 100vh;
 }
 
@@ -180,7 +180,7 @@ a {
 /*********** Tablet screen view ***********/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-        background-image: url("images/copy-bhou bhou--new year 2019.jpg")
+        background-image: url("assets/images/copy-bhou bhou--new year 2019.jpg")
     }
 
     /* ARROW INDIA : name animation */
@@ -240,7 +240,7 @@ a {
 /*********** Mobile screen view ***********/
 @media screen and (max-width: 767px) {
     body {
-        background-image: url("images/copy-bhou bhou--new year 2019.jpg")
+        background-image: url("assets/images/copy-bhou bhou--new year 2019.jpg")
     }
 
     /* ARROW INDIA : name animation */

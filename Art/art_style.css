@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/2_blurred_compressed.jpg");
+    background-image: url("../assets/images/pictures_bg.png");
     min-height: 100vh;
 }
 
