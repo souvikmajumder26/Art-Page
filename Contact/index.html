@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../fonts/font-raleway.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Art/art_style.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="icon" href="../icons/A.png">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <p class="hover-underline-animation">
+                        S&nbsp;o&nbsp;u&nbsp;v&nbsp;i&nbsp;k&nbsp;'&nbsp;s&nbsp;&nbsp;&nbsp;A&nbsp;r&nbsp;t
+                    </p>
+                </a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../Art/index.html">Pictures</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid contact-container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-h2">Contact Me</h2>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 contact-div">
+                <div class="contact-address">
+                    <i class="fas fa-route icon-address"></i>
+                    <div class="contact-address-text">
+                        <span class="contact-span">Address</span>
+                        <a class="contact-links" href="https://www.google.com/maps/dir/22.5082729,88.3877518/arrow+india/@22.4399693,88.39173,20.03z/" target="_blank">
+                            <p>Ramchandrapur</p>
+                            <p>(near&nbsp;Gool&nbsp;Factory),</p>
+                            <p>P.O:&nbsp;Narendrapur,</p>
+                            <p>Kolkata&nbsp;-&nbsp;700103</p>
+                        </a>
+                        <!--
+                        <p><a class="contact-links" href="https://www.google.com/maps/dir/22.5082729,88.3877518/arrow+india/@22.4399693,88.39173,20.03z/" target="_blank">Ramchandrapur</a></p>
+                        <p><a class="contact-links" href="https://www.google.com/maps/dir/22.5082729,88.3877518/arrow+india/@22.4399693,88.39173,20.03z/" target="_blank">(near&nbsp;Gool&nbsp;Factory),</a></p>
+                        <p><a class="contact-links" href="https://www.google.com/maps/dir/22.5082729,88.3877518/arrow+india/@22.4399693,88.39173,20.03z/" target="_blank">P.O:&nbsp;Narendrapur,</a></p>
+                        <p><a class="contact-links" href="https://www.google.com/maps/dir/22.5082729,88.3877518/arrow+india/@22.4399693,88.39173,20.03z/" target="_blank">Kolkata&nbsp;-&nbsp;700103</a></p>
+                        -->
+                    </div>
+                </div>
+                <div class="contact-phone">
+                    <i class="fas fa-phone-alt icon-phone"></i>
+                    <div class="contact-phone-text">
+                        <span class="contact-span">Phone</span>
+                        <p><a class="contact-links" href="tel: +919339299100" target="_blank">9339299100</a></p>
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <i class="far fa-envelope icon-email"></i>
+                    <div class="contact-email-text">
+                        <span class="contact-span">Email</span>
+                        <p><a class="contact-links" href="mailto:sm.souvikmajumder@gmail.com" target="_blank">sm.souvikmajumder@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 contact-div">
+                <div id="map"></div>
+            </div>
+            <div class="col-12 contact-div">
+                <div class="contact-whatsapp">
+                    <a href="https://wa.me/919339299100" target="_blank">
+                    <button class="contact-whatsapp-button"><img class="contact-whatsapp-image" src="../icons/whatsapp.png"> Message on WhatsApp</img></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu5mIU_EJV6fEGtFYsrvxPEWAio8IYf4Y&callback=initMap" async>
+    </script>
+    <script>
+        let map;
+
+        function initMap() {
+        const uluru = { lat: 22.44020, lng: 88.39215 }
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: uluru,
+            zoom: 17,
+        });
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+        }
+    </script>
+    <script>
+        // reload page once after first load
+        window.onload = function() {
+            //considering there aren't any hashes in the urls already
+            if(!window.location.hash) {
+                //setting window location
+                window.location = window.location + '#loaded';
+                //using reload() method to reload web page
+                window.location.reload();
+            }
+        }
+    </script>
+
+</body>
+</html>

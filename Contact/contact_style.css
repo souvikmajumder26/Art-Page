@@ -1,0 +1,134 @@
+* {
+    font-family: 'Raleway-600', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../images/3_compressed.jpg");
+    min-height: 100vh;
+}
+
+i {
+    float: left;
+    margin-left: 5%;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border: 18px solid white;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.navbar-nav {
+    background-color: rgba(114, 35, 11, 0.692);
+}
+.navbar-nav:hover {
+    background-color: rgba(121, 65, 48, 0.61);
+}
+
+.contact-container {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.contact-h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    margin-bottom: 50px;
+}
+
+.contact-div {
+    color: white;
+    text-align: center;
+}
+
+.contact-span {
+    color: rgb(0, 195, 255);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-address, .contact-phone, .contact-email {
+    width: 500px;
+    padding: 30px;
+    text-align: left;
+}
+
+.contact-address-text, .contact-phone-text, .contact-email-text {
+    margin-left: 25%;
+    text-shadow: 2px 2px 10px black;
+}
+
+.contact-links {
+    color: white;
+    text-decoration: none;
+}
+.contact-links:hover {
+    color: rgb(202, 177, 177);
+}
+
+.icon-address {
+    margin-top: 20px;
+}
+
+.contact-whatsapp {
+    margin-bottom: 30px;
+}
+.contact-whatsapp-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #34434b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 10px solid #34434b;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+.contact-whatsapp-button:hover {
+    background-color: #425661;
+    border: 10px solid #425661;
+}
+.contact-whatsapp-image {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#map {
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    height: 440px;
+    width: 96%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+@media screen and (min-width: 992px) {
+    i {
+        margin-left: 40%;
+    }
+    .contact-h2 {
+        font-size: 34px;
+    }
+    .contact-address-text, .contact-phone-text, .contact-email-text {
+        margin-left: 60%;
+        font-size: 18px;
+    }
+    #map {
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #map {
+        margin-top: 0px;
+    }
+}
