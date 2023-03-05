@@ -190,8 +190,8 @@ p {
 @media only screen and (max-width: 768px){
     .modal-content {
         object-fit: cover;
-        width: auto;
-        height: 32em;
+        width: 28em;
+        height: auto;
       }
 }
 
