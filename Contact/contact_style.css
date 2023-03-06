@@ -8,7 +8,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../assets/images/3_compressed.jpg");
+    /* background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../assets/images/new_bg.jpg"); */
+    background-image: url("../assets/images/contact_bg.png");
     min-height: 100vh;
 }
 
