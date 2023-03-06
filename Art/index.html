@@ -33,7 +33,7 @@
             <div class="col-6 col-lg-3 col-md-4">
                 <div class="img-container">
                     <div class="img-hover-pan-v img-border">
-                        <img id="myImg" class="img-fluid" src="../assets/images/art/resized/p1.jpg">
+                        <img id="myImg1" class="img-fluid" src="../assets/images/art/resized/p1.jpg">
                     </div>
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
@@ -290,10 +290,10 @@
         var modal = document.getElementById("myModal");
         
         // Get the image and insert it inside the modal
-        var img = document.getElementById("myImg");
+        var img1 = document.getElementById("myImg1");
         var modalImg = document.getElementById("imgModal");
         // var captionText = document.getElementById("caption");
-        img.onclick = function(){
+        img1.onclick = function(){
           modal.style.display = "block";
           modalImg.src = this.src;
         //   captionText.innerHTML = this.alt;
