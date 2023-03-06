@@ -13,8 +13,8 @@ body {
 }
 
 i {
-    float: left;
-    margin-left: 5%;
+    /* float: left; */
+    /* margin-left: 50%; */
     font-size: 18px;
     color: black;
     background-color: white;
@@ -31,7 +31,7 @@ i {
 }
 
 .contact-container {
-    margin-top: 30px;
+    margin-top: 50px;
     overflow: hidden;
 }
 
@@ -45,6 +45,7 @@ i {
 }
 
 .contact-div {
+    margin-top: 20px;
     color: white;
     text-align: center;
 }
@@ -56,13 +57,15 @@ i {
 }
 
 .contact-address, .contact-phone, .contact-email {
-    width: 500px;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    /* width: 500px;
+    padding: 30px; */
     text-align: left;
 }
 
 .contact-address-text, .contact-phone-text, .contact-email-text {
-    margin-left: 25%;
+    margin-left: 5%;
     text-shadow: 2px 2px 10px black;
 }
 
@@ -112,23 +115,24 @@ i {
     box-shadow: 2px 2px 10px black;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     i {
-        margin-left: 40%;
+        float: left;
+        margin-left: 100%;
     }
     .contact-h2 {
         font-size: 34px;
     }
-    .contact-address-text, .contact-phone-text, .contact-email-text {
+    /* .contact-address-text, .contact-phone-text, .contact-email-text {
         margin-left: 60%;
         font-size: 18px;
-    }
-    #map {
+    } */
+    /* #map {
         margin-top: 0px;
-    }
+    } */
 }
 @media screen and (min-width: 768px) {
-    #map {
+    /* #map {
         margin-top: 0px;
-    }
+    } */
 }
