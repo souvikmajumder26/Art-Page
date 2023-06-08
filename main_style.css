@@ -50,6 +50,13 @@ a {
     70%, 90% { width: 100%;}
 }
 
+/* Page - Left Top Corner items */
+.logo-top-left {
+    position: absolute;
+    top: 20px;
+    padding-left: 30px;
+}
+
 /* Page - Left Down Corner items */
 .contact-bottom-left {
     font-family: 'Raleway-500';

@@ -13,15 +13,23 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: black;
+}
+
 i {
-    /* float: left; */
-    /* margin-left: 50%; */
     font-size: 18px;
     color: black;
     background-color: white;
     border: 18px solid white;
     border-radius: 100px;
     box-shadow: 2px 2px 5px black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .navbar-nav {
@@ -46,7 +54,8 @@ i {
 }
 
 .contact-div {
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     color: white;
     text-align: center;
 }
@@ -106,6 +115,13 @@ i {
     height: 30px;
 }
 
+.copyright-bottom-left {
+    color: black;
+    font-family: 'Raleway-400';
+    font-size: 15px;
+    padding: 15px;
+}
+
 #map {
     margin-left: 5px;
     margin-top: 50px;
@@ -117,10 +133,10 @@ i {
 }
 
 @media screen and (min-width: 768px) {
-    i {
+    /* i {
         float: left;
         margin-left: 100%;
-    }
+    } */
     .contact-h2 {
         font-size: 34px;
     }
